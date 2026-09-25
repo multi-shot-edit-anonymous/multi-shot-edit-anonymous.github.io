@@ -1,0 +1,29 @@
+# ---- Files kept locally but NOT deployed to the anonymous GitHub Pages repo ----
+
+# Uncompressed eval master (the deployed, compressed copies live in asset/eval/)
+asset/eval_original/
+
+# Build-source assets the deployed pages never reference
+# (teaser uses composed quads in asset/media/hero/; intro uses asset/media/intro/)
+asset/25s-editing/
+asset/features/
+asset/image-guided/
+asset/set-to-set/
+asset/text-guided/
+
+# Unused hero quads (dress-fly slide hidden; woman-monster uses the _blur version)
+asset/media/hero/dress-fly-quad.mp4
+asset/media/hero/dress-fly-quad.jpg
+asset/media/hero/woman-monster-quad.mp4
+asset/media/hero/woman-monster-quad.jpg
+
+# Internal working docs / mockups (not part of the public site)
+DESIGN-NOTES.md
+MOVIEDIT.md
+mockups/
+
+# OS junk & transfer archives
+.DS_Store
+**/.DS_Store
+*.tar
+*.tar.gz
