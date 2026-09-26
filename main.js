@@ -402,7 +402,7 @@
 
   // AI-generated
   const AIP = 'asset/media/ai-generated/';
-  const SQ = 'asset/ai-generated/1_squid/', TT = 'asset/ai-generated/2_titantic/', LA = 'asset/ai-generated/3_lala/', DK = 'asset/ai-generated/4_dark/', MG = 'asset/ai-generated/5_man_gun/', JK = 'asset/ai-generated/6_joker/', CF = 'asset/ai-generated/7_men_coffee/', CO = 'asset/ai-generated/8_men_company/', WS = 'asset/ai-generated/9_woman_sing/', WM = 'asset/ai-generated/10_woman_monster/', MC = 'asset/ai-generated/11_man-child-subway/';
+  const SQ = 'asset/ai-generated/1_squid/', TT = 'asset/ai-generated/2_titantic/', LA = 'asset/ai-generated/3_lala/', DK = 'asset/ai-generated/4_dark/', MG = 'asset/ai-generated/5_man_gun/', JK = 'asset/ai-generated/6_joker/', CF = 'asset/ai-generated/7_men_coffee/', CO = 'asset/ai-generated/8_men_company/', WS = 'asset/ai-generated/9_woman_sing/', WM = 'asset/ai-generated/10_woman_monster/', MC = 'asset/ai-generated/11_man-child-subway/', AJ = 'asset/ai-generated/12_anime-jazz/';
   initGallery('aigen', document.getElementById('aiSources'), document.getElementById('aiInput'), document.getElementById('aiEdits'), [
     {
       input: AIP + '2titanic-input-audio.mp4', inputPoster: AIP + '2titanic-input.jpg', sound: true,
@@ -520,6 +520,14 @@
         { out: MC + '3_black/output_video.mp4', poster: AIP + '11subway-3_black.jpg', type: 'image', pairs: [{ orig: AIP + '11subway-orig-144.jpg', img: MC + '3_black/edited_frame_144.jpg' }] },
         { out: MC + '4_background/output_video.mp4', poster: AIP + '11subway-4_background.jpg', type: 'text', text: 'Change the appearance of the floor to match a green grass lawn.' },
         { out: MC + '5_light/output_video.mp4', poster: AIP + '11subway-5_light.jpg', type: 'image', pairs: [{ orig: AIP + '11subway-orig-336.jpg', img: MC + '5_light/edited_frame_336.jpg' }] },
+      ],
+    },
+    {
+      input: AIP + '12jazz-input-audio.mp4', inputPoster: AIP + '12jazz-input.jpg', sound: true,
+      edits: [
+        { out: AJ + '1_blue-note/output_video.mp4', poster: AIP + '12jazz-1_blue-note.jpg', type: 'text', text: 'Change the color of the note to blue.' },
+        { out: AJ + '2_golden-note/output_video.mp4', poster: AIP + '12jazz-2_golden-note.jpg', type: 'text', text: 'Change the color of the note to shining gold.' },
+        { out: AJ + '3_high-noon-daylight/output_video.mp4', poster: AIP + '12jazz-3_high-noon-daylight.jpg', type: 'image', pairs: [{ orig: AIP + '12jazz-orig-168.jpg', img: AJ + '3_high-noon-daylight/edited_frame_168.jpg' }] },
       ],
     },
   ]);
