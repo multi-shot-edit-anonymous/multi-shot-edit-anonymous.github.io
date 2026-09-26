@@ -340,7 +340,7 @@ body::before{
 /* ---- results: real-world / AI-generated galleries ------------------------- */
 .rw-wide{max-width:1800px;padding-inline:clamp(20px,3.2vw,44px)}
 .rw-sources{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:clamp(22px,2.6vw,34px)}
-.rw-source{appearance:none;cursor:pointer;padding:0;background:none;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;width:clamp(170px,17vw,224px);position:relative;transition:border-color .18s,transform .12s}
+.rw-source{appearance:none;cursor:pointer;padding:0;background:none;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;width:clamp(200px,20vw,264px);position:relative;transition:border-color .18s,transform .12s}
 .rw-source:hover{border-color:var(--line-2);transform:translateY(-1px)}
 .rw-source[aria-selected="true"]{border-color:var(--amber)}
 .rw-source video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
