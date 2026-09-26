@@ -402,7 +402,7 @@
 
   // AI-generated
   const AIP = 'asset/media/ai-generated/';
-  const SQ = 'asset/ai-generated/1_squid/', TT = 'asset/ai-generated/2_titantic/', LA = 'asset/ai-generated/3_lala/', DK = 'asset/ai-generated/4_dark/', MG = 'asset/ai-generated/5_man_gun/', JK = 'asset/ai-generated/6_joker/', CF = 'asset/ai-generated/7_men_coffee/', CO = 'asset/ai-generated/8_men_company/', WS = 'asset/ai-generated/9_woman_sing/', WM = 'asset/ai-generated/10_woman_monster/';
+  const SQ = 'asset/ai-generated/1_squid/', TT = 'asset/ai-generated/2_titantic/', LA = 'asset/ai-generated/3_lala/', DK = 'asset/ai-generated/4_dark/', MG = 'asset/ai-generated/5_man_gun/', JK = 'asset/ai-generated/6_joker/', CF = 'asset/ai-generated/7_men_coffee/', CO = 'asset/ai-generated/8_men_company/', WS = 'asset/ai-generated/9_woman_sing/', WM = 'asset/ai-generated/10_woman_monster/', MC = 'asset/ai-generated/11_man-child-subway/';
   initGallery('aigen', document.getElementById('aiSources'), document.getElementById('aiInput'), document.getElementById('aiEdits'), [
     {
       input: AIP + '2titanic-input-audio.mp4', inputPoster: AIP + '2titanic-input.jpg', sound: true,
@@ -510,6 +510,16 @@
         { out: WM + '4_woman-black/output_video.mp4', poster: AIP + '10monster-4_woman-black.jpg', type: 'image', pairs: [{ orig: AIP + '10monster-orig-248.jpg', img: WM + '4_woman-black/edited_image_248.jpg' }] },
         { out: WM + '5_night/output_video.mp4', poster: AIP + '10monster-5_night.jpg', type: 'text', text: 'Change the scene environment to deep midnight with heavy moonlight and cool ambient indigo tones.' },
         { out: WM + '6_style/output_video.mp4', poster: AIP + '10monster-6_style.jpg', type: 'image', pairs: [{ orig: AIP + '10monster-orig-136.jpg', img: WM + '6_style/edited_frame_136.jpg' }] },
+      ],
+    },
+    {
+      input: AIP + '11subway-input-audio.mp4', inputPoster: AIP + '11subway-input.jpg', sound: true,
+      edits: [
+        { out: MC + '1_remove-child/output_video.mp4', poster: AIP + '11subway-1_remove-child.jpg', type: 'text', text: 'Remove the child.' },
+        { out: MC + '2_black-texture-man/output_video.mp4', poster: AIP + '11subway-2_black-texture-man.jpg', type: 'image', pairs: [{ orig: AIP + '11subway-orig-400.jpg', img: MC + '2_black-texture-man/edited_frame_400.png' }] },
+        { out: MC + '3_black/output_video.mp4', poster: AIP + '11subway-3_black.jpg', type: 'image', pairs: [{ orig: AIP + '11subway-orig-144.jpg', img: MC + '3_black/edited_frame_144.jpg' }] },
+        { out: MC + '4_background/output_video.mp4', poster: AIP + '11subway-4_background.jpg', type: 'text', text: 'Change the appearance of the floor to match a green grass lawn.' },
+        { out: MC + '5_light/output_video.mp4', poster: AIP + '11subway-5_light.jpg', type: 'image', pairs: [{ orig: AIP + '11subway-orig-336.jpg', img: MC + '5_light/edited_frame_336.jpg' }] },
       ],
     },
   ]);
