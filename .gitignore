@@ -27,3 +27,7 @@ mockups/
 **/.DS_Store
 *.tar
 *.tar.gz
+
+# AI clip source input/audio (deployed input is asset/media/ai-generated/<tag>-input-audio.mp4)
+asset/ai-generated/*/input_video.mp4
+asset/ai-generated/*/audio.mp4

@@ -402,7 +402,7 @@
 
   // AI-generated
   const AIP = 'asset/media/ai-generated/';
-  const SQ = 'asset/ai-generated/1_squid/', TT = 'asset/ai-generated/2_titantic/', LA = 'asset/ai-generated/3_lala/', DK = 'asset/ai-generated/4_dark/', MG = 'asset/ai-generated/5_man_gun/', JK = 'asset/ai-generated/6_joker/', CF = 'asset/ai-generated/7_men_coffee/', CO = 'asset/ai-generated/8_men_company/';
+  const SQ = 'asset/ai-generated/1_squid/', TT = 'asset/ai-generated/2_titantic/', LA = 'asset/ai-generated/3_lala/', DK = 'asset/ai-generated/4_dark/', MG = 'asset/ai-generated/5_man_gun/', JK = 'asset/ai-generated/6_joker/', CF = 'asset/ai-generated/7_men_coffee/', CO = 'asset/ai-generated/8_men_company/', WS = 'asset/ai-generated/9_woman_sing/', WM = 'asset/ai-generated/10_woman_monster/';
   initGallery('aigen', document.getElementById('aiSources'), document.getElementById('aiInput'), document.getElementById('aiEdits'), [
     {
       input: AIP + '2titanic-input-audio.mp4', inputPoster: AIP + '2titanic-input.jpg', sound: true,
@@ -489,6 +489,27 @@
         { out: SQ + '3_add_cycling_helmet/output_video.mp4', poster: AIP + '1squid-3_add_cycling_helmet.jpg', type: 'image', pairs: [{ orig: AIP + '1squid-orig-200.jpg', img: SQ + '3_add_cycling_helmet/edited_frame_200.jpg' }] },
         { out: SQ + '4_another_man/output_video.mp4', poster: AIP + '1squid-4_another_man.jpg', type: 'image', pairs: [{ orig: AIP + '1squid-orig-208.jpg', img: SQ + '4_another_man/edited_frame_208.jpg' }] },
         { out: SQ + '5_foggy/output_video.mp4', poster: AIP + '1squid-5_foggy.jpg', type: 'text', text: 'Change the scene environment to dim, eerie nocturnal fog with cold bluish ambient light.' },
+      ],
+    },
+    {
+      input: AIP + '9sing-input-audio.mp4', inputPoster: AIP + '9sing-input.jpg', sound: true,
+      edits: [
+        { out: WS + '1_remove/output_video.mp4', poster: AIP + '9sing-1_remove.jpg', type: 'text', text: 'Remove the woman in a green sequin dress.' },
+        { out: WS + '2_outfit/output_video.mp4', poster: AIP + '9sing-2_outfit.jpg', type: 'image', pairs: [{ orig: AIP + '9sing-orig-248.jpg', img: WS + '2_outfit/edited_frame_248.jpg' }] },
+        { out: WS + '3_outfit/output_video.mp4', poster: AIP + '9sing-3_outfit.jpg', type: 'text', text: 'Change the appearance of the woman in a green sequin dress to match a grey business blazer.' },
+        { out: WS + '4_hair/output_video.mp4', poster: AIP + '9sing-4_hair.jpg', type: 'image', pairs: [{ orig: AIP + '9sing-orig-136.jpg', img: WS + '4_hair/edited_frame_136.jpg' }] },
+        { out: WS + '5_style/output_video.mp4', poster: AIP + '9sing-5_style.jpg', type: 'image', pairs: [{ orig: AIP + '9sing-orig-136.jpg', img: WS + '5_style/edited_frame_136.jpg' }] },
+      ],
+    },
+    {
+      input: AIP + '10monster-input-audio.mp4', inputPoster: AIP + '10monster-input.jpg', sound: true,
+      edits: [
+        { out: WM + '1_remove/output_video.mp4', poster: AIP + '10monster-1_remove.jpg', type: 'text', text: 'Remove the woman in pink hair.' },
+        { out: WM + '2_red-dress/output_video.mp4', poster: AIP + '10monster-2_red-dress.jpg', type: 'image', pairs: [{ orig: AIP + '10monster-orig-160.jpg', img: WM + '2_red-dress/edited_frame_160.jpg' }] },
+        { out: WM + '3_blonde/output_video.mp4', poster: AIP + '10monster-3_blonde.jpg', type: 'text', text: 'Change the appearance of the woman in pink hair to match long, wavy golden blonde hair.' },
+        { out: WM + '4_woman-black/output_video.mp4', poster: AIP + '10monster-4_woman-black.jpg', type: 'image', pairs: [{ orig: AIP + '10monster-orig-248.jpg', img: WM + '4_woman-black/edited_image_248.jpg' }] },
+        { out: WM + '5_night/output_video.mp4', poster: AIP + '10monster-5_night.jpg', type: 'text', text: 'Change the scene environment to deep midnight with heavy moonlight and cool ambient indigo tones.' },
+        { out: WM + '6_style/output_video.mp4', poster: AIP + '10monster-6_style.jpg', type: 'image', pairs: [{ orig: AIP + '10monster-orig-136.jpg', img: WM + '6_style/edited_frame_136.jpg' }] },
       ],
     },
   ]);
